@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_number"
+        android:layout_width="match_parent"
+        app:errorEnabled="true"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_number"
+            android:inputType="number"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            />
+        <Button
+            android:id="@id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:text="@string/submit"/>
+
+</LinearLayout>

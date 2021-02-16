@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DailyCompletedTask</string>
+    <string name="enter_number">Enter any Number</string>
+    <string name="submit">Submit</string>
+    <string name="result">Result:</string>
+    <string name="valid_palindrome_num">palindrome number</string>
+    <string name="not_valid_palindrome_num">Not a palindrome number</string>
+    <string name="valid_mystery_number"> is mystery number</string>
+    <string name="not_valid_mystery_number"> is not a mystery number</string>
+    <string name="empty_number_field">Please enter any number</string>
+    <string name="print_pattern">print pattern</string>
+    <string name="valid_armstrong">is armstrong number</string>
+    <string name="invalid_armstrong">is not armstrong number</string>
+
+
+</resources>
