@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/holo_purple"
+    tools:context=".FragmentThird">
+
+    <TextView
+        android:id="@+id/tv_fragment_31"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp_20"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Current Date Time : " />
+
+    <TextView
+        android:id="@+id/tv_fragment_32"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textSize="@dimen/sp_20"
+        android:gravity="center"
+        android:text="Sorting Date List is :" />
+
+    <TextView
+        android:id="@+id/tv_fragment_33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textSize="@dimen/sp_20"
+        android:text="Sorting Time list is :" />
+
+
+
+</LinearLayout>

@@ -23,6 +23,9 @@ public class GooglePayUPI extends AppCompatActivity {
     Button send;
     String TAG ="main";
     final int UPI_PAYMENT = 0;
+
+    String GOOGLE_PAY_PACKAGE_NAME = "com.google.android.apps.nbu.paisa.user";
+    int GOOGLE_PAY_REQUEST_CODE = 123;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,14 +70,17 @@ public class GooglePayUPI extends AppCompatActivity {
                 .build();
         Intent upiPayIntent = new Intent(Intent.ACTION_VIEW);
         upiPayIntent.setData(uri);
+
+     upiPayIntent.setPackage(GOOGLE_PAY_PACKAGE_NAME);
+     startActivityForResult(upiPayIntent, GOOGLE_PAY_REQUEST_CODE);
         // will always show a dialog to user to choose an app
-        Intent chooser = Intent.createChooser(upiPayIntent, "Pay with");
+        /*Intent chooser = Intent.createChooser(upiPayIntent, "Pay with");
         // check if intent resolves
         if(null != chooser.resolveActivity(getPackageManager())) {
             startActivityForResult(chooser, UPI_PAYMENT);
         } else {
             Toast.makeText(GooglePayUPI.this,"No UPI app found, please install one to continue",Toast.LENGTH_SHORT).show();
-        }
+        }*/
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

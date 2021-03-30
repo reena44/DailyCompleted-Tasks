@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_20"
+    android:orientation="vertical"
+    tools:context=".CheckboxSelection">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_select"
+            android:layout_gravity="center"
+            android:text="Select All"
+            android:layout_weight="1"
+            android:onClick="allSelection"
+            android:background="@color/colorAccent"
+            />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_unselect"
+            android:layout_gravity="center"
+            android:text="Unselect All"
+            android:layout_weight="1"
+            android:onClick="allUnselection"
+            android:background="@android:color/holo_purple"
+            />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingStart="10dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/search_bg"
+        android:hint="search"
+        android:paddingLeft="10dp" />
+
+    <TextView
+            android:id="@+id/tv_getData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:id="@+id/rv_data"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_data"
+        />
+
+
+</LinearLayout>
