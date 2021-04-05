@@ -18,8 +18,8 @@
         <activity android:name=".FragmentActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".roomdatabase.TodoNoteActivity" />
-
-        <activity android:name=".roomdatabase.MainActivity">
+        <activity android:name=".roomdemoapp.RoomNoteActivity" />
+        <activity android:name=".phonepe.MainPhonepeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,5 +27,18 @@
             </intent-filter>
         </activity>
     </application>
+
+    <!-- Keep it false in production environment-->
+    <meta-data
+        android:name="com.phonepe.android.sdk.Debuggable"
+        android:value="true"/>
+    <!-- Keep it false in production environment-->
+    <meta-data
+        android:name="com.phonepe.android.sdk.isUAT"
+        android:value="true"/>
+    <!-- Get the App Id from PhonePe-->
+   <!-- <meta-data
+        android:name="com.phonepe.android.sdk.AppId"
+        android:value="<your app id given by PhonePe>"/>-->
 
 </manifest>

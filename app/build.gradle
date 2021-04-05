@@ -45,4 +45,6 @@ dependencies {
     annotationProcessor 'android.arch.persistence.room:compiler:1.0.0'
     kapt "android.arch.persistence.room:compiler:1.0.0"
 
+    implementation 'phonepe.intentsdk.android.release:IntentSDK:0.1.5.3'
+    implementation 'com.google.android.gms:play-services-ads-identifier:16.0.0'
 }
